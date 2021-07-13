@@ -1,0 +1,13 @@
+[학습 내용]
+==========================
+[자료 위치] 07_머신러닝_기본다지기
+code :
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch01_01_ML_start_v10.html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch02_01_01_knn_code.html
+(1) 라이브러리 정리
+(2) 나의 첫 모델 만들기 - 실습
+(3) 머신러닝 알아보기
+	
+(4) 팀별 시간
+(5) 하루 정리 및 마무리
+==================
