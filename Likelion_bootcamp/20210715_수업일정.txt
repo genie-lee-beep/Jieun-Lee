@@ -1,1 +1,16 @@
-7.15일 학습내용
+[학습 내용]
+==========================
+[자료 위치] 07_머신러닝_기본다지기 -
+code :
+https://github.com/LDJWJ/ML_Basic_Class
+  머신러닝 - 의사결정트리
+   https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch02_03_02_decisionTree_diabetes_colab.html
+  머신러닝 - 앙상블_랜덤포레스트(1)
+   https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch02_03_03_Randomforest(1).html
+(1) 지난 시간 리뷰
+(2) 의사결정트리, 앙상블 알아보기
+(3) 개별 대회 분석(6교시, 7교시)
+     - 의사결정트리 만들기, 랜덤포레스트 모델 만들기
+(4) 하루 정리 및 마무리
+(5) 면담(6교시, 7교시)
+==================
