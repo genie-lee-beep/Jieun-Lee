@@ -1,0 +1,25 @@
+### 07/20(화) - 머신러닝 기본
+[학습 목표]
+- 머신러닝의 교차 검증 알고리즘에 대해 알아본다.
+- 여러모델을 사용하여 하나의 머신러닝 과제를 해결하는 것을 알아본다.
+- 실습을 통해 기본 이해도를 높인다.
+[학습 내용]
+===== ===== ===== ===== =====
+[자료 위치] 07_머신러닝_기본다지기 -
+code : https://github.com/LDJWJ/ML_Basic_Class
+### 머신러닝 - 교차 검증1(1), (2)
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_01_01_CrossValidation_v01.html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_01_02_CrossValidation_v02.html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch02_04_04_Bike_B_02_v10.html
+(1) 지난 시간 리뷰
+(2) 의사결정트리, 앙상블 알아보기
+(3) 앙상블 기법(RandomForest), 교차 검증 이해
+(4) 데이콘 대회 기본 및 실습(6교시, 7교시)
+(5) 하루 정리 및 마무리
+(6) 면담(6교시, 7교시)
+===== ===== ===== ===== =====
+LDJWJ/ML_Basic_Class
+Stars
+1
+Language
+HTML
