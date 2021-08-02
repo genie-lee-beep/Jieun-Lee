@@ -1,0 +1,25 @@
+### 08/02(월) - 머신러닝 기본 (원핫, 평가지표)
+[학습 목표]
+- 지난 시간 리뷰
+- 라벨 인코딩과 원핫 인코딩에 대해 알아본다.
+- 이진 분류의 평가지표에 대해 알아본다.
+[학습 내용]
+===== ===== ===== ===== =====
+ppt
+https://drive.google.com/drive/folders/19qPG2qUAZCdeyKe6I-4nZDm2r0eUnEgQ?usp=sharing
+[자료 위치] 머신러닝 - 데이터 전처리
+code : https://github.com/LDJWJ/ML_Basic_Class
+[자료 위치] 머신러닝 - 원핫 인코딩 1,2,3
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch04_01_01_FE_OneHotEncoding_01.html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch04_01_02_FE_OneHotEncoding_02.html
+...
+[자료 위치] 머신러닝 - 평가지표 1,2
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_03_01_model_validation(1).html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_03_02_model_validation(2)_threshold.html
+(1) 지난 시간 리뷰
+(2) 데이터 전처리 (정규화 알아보기)
+(3) 라벨 인코딩, 원핫 인코딩 알아보기
+(4) 머신러닝-평가지표1,2 알아보기
+(5) 팀별 프로젝트
+(6) 마무리
+===== ===== ===== ===== =====
