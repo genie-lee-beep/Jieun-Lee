@@ -1,0 +1,33 @@
+### 08/03(화) - 머신러닝 기본
+[학습 목표]
+- 머신러닝 평가지표를 이해한다.
+- (추가) 비지도학습에 대해 알아본다.
+[학습 내용]
+===== ===== ===== ===== =====
+[자료 위치] 07_머신러닝_기본다지기 -
+code : https://github.com/LDJWJ/ML_Basic_Class
+### 평가지표 ppt
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/part03_ch05_validation/ch05_%ED%8F%89%EA%B0%80%EC%A7%80%ED%91%9C_v04_202108.pdf
+### 머신러닝 - 모델 평가(1), (2), (3)
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_03_01_model_validation(1).html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_03_02_model_validation(2)_threshold.html
+...
+(1) 지난 시간 리뷰
+(2) 머신러닝 평가지표에 대해 이해한다.
+(3) 비지도학습에 대해 알아본다.
+(4) 하루 정리 및 마무리
+(5) 팀별 프로젝트
+(이후의 시간) 비지도학습
+(1) PCA 차원 축소
+    - PCA 얼굴 예제 실습
+(2) PCA 차원 축소 - tsne
+(3) 군집(Clustering)
+(4) DBSCAN(Clustering)
+실습파일(참조 파일)
+https://drive.google.com/drive/folders/1N_nDekZvT-wTYk0DmKqoYgZo3BIdLjY_?usp=sharing
+===== ===== ===== ===== =====
+LDJWJ/ML_Basic_Class
+Stars
+1
+Language
+HTML
