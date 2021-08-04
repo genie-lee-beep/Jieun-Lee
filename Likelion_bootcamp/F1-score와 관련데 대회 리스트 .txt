@@ -1,0 +1,53 @@
+F1-score와 관련데 대회 리스트 
+
+
+Natural Language Processing with Disaster Tweets
+https://www.kaggle.com/c/nlp-getting-started/overview/evaluation
+Shopee - Price Match Guarantee
+https://www.kaggle.com/c/shopee-product-matching/overview/evaluation
+Instacart Market Basket Analysis
+mean F1 score
+https://www.kaggle.com/c/instacart-market-basket-analysis/overview/evaluation
+### ROC curve(AUC)
+Bag of Words Meets Bags of Popcorn
+https://www.kaggle.com/c/word2vec-nlp-tutorial/overview/evaluation
+Riiid Answer Correctness Prediction
+https://www.kaggle.com/c/riiid-test-answer-prediction/overview/evaluation
+SIIM-ISIC Melanoma Classification
+https://www.kaggle.com/c/siim-isic-melanoma-classification/overview/evaluation
+Jigsaw Multilingual Toxic Comment Classification
+https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/overview/evaluation
+Instant Gratification
+https://www.kaggle.com/c/instant-gratification/overview/evaluation
+TalkingData AdTracking Fraud Detection Challenge
+https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection/overview/evaluation
+Mercari Price Suggestion Challenge
+https://www.kaggle.com/c/mercari-price-suggestion-challenge/overview/evaluation
+Predicting Red Hat Business Value
+https://www.kaggle.com/c/predicting-red-hat-business-value/overview/evaluation
+Home Credit Default Risk
+https://www.kaggle.com/c/home-credit-default-risk/overview/evaluation
+Avito Duplicate Ads Detection
+https://www.kaggle.com/c/avito-duplicate-ads-detection/overview/evaluation
+Santander Customer Satisfaction
+https://www.kaggle.com/c/santander-customer-satisfaction/overview/evaluation
+### RMSPE
+Optiver Realized Volatility Prediction
+https://www.kaggle.com/c/optiver-realized-volatility-prediction/overview/evaluation
+### RMSLE
+ASHRAE - Great Energy Predictor III
+https://www.kaggle.com/c/ashrae-energy-prediction/overview/evaluation
+Santander Value Prediction Challenge
+https://www.kaggle.com/c/santander-value-prediction-challenge/overview/evaluation
+Sberbank Russian Housing Market
+https://www.kaggle.com/c/sberbank-russian-housing-market/overview/evaluation
+Grupo Bimbo Inventory Demand
+https://www.kaggle.com/c/grupo-bimbo-inventory-demand/overview/evaluation
+### RMSE
+Elo Merchant Category Recommendation
+https://www.kaggle.com/c/elo-merchant-category-recommendation/overview/evaluation
+Avito Demand Prediction Challenge
+https://www.kaggle.com/c/avito-demand-prediction/overview/evaluation
+### MAE
+Zillow Prize: Zillow’s Home Value Prediction (Zestimate)
+https://www.kaggle.com/c/zillow-prize-1/overview/evaluation
