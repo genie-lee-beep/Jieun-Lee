@@ -1,0 +1,12 @@
+### 08/05(목) - 팀별 프로젝트 시간
+[학습 목표]
+- 머신러닝 평가지표를 이해한다.
+[학습 내용]
+===== ===== ===== ===== =====
+[자료 위치] 07_머신러닝_기본다지기 -
+code : https://github.com/LDJWJ/ML_Basic_Class
+### 평가지표 ppt
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/part03_ch05_validation/ch05_%ED%8F%89%EA%B0%80%EC%A7%80%ED%91%9C_v04_202108.pdf
+### 머신러닝 - 모델 평가(1), (2), (3)
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_03_01_model_validation(1).html
+https://ldjwj.github.io/ML_Basic_Class/part03_ml/ch05_03_02_model_validation(2)_threshold.html
