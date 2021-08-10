@@ -1,0 +1,32 @@
+### 08/10(화) - 딥러닝 실습
+[학습 목표]
+- 딥러닝에 대해 기본 소개하고 간단한 실습을 통해 알아본다.
+- Titanic 데이터 셋에 대해 딥러닝 실습을 통해 알아본다.
+- MNIST 데이터 셋에 대해 딥러닝 실습을 통해 알아본다.
+[학습 내용]
+===== ===== ===== ===== =====
+■ 지난 시간 리뷰
+■ 딥러닝 기본 알고리즘을 소개한다.
+■ 실습을 통해 신경망 알고리즘을 실습해 본다.
+[자료 위치]
+구글 드라이브 - 10_딥러닝입문 - unit03_dl_bike_titanic
+구글 드라이브 - 10_딥러닝입문 - unit03_dl_mnist
+- Titanic 실습
+https://ldjwj.github.io/DL_Basic/part04_01_dl_start/ch01_03_Neural_Net_Titanic.html
+- 딥러닝 알고리즘
+https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/01C_DL_Intro_2001_v10.pdf
+https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_00_NeuralNet_wColab.pdf
+- MNIST 데이터 셋을 활용한 딥러닝 모델 구현
+https://ldjwj.github.io/DL_Basic/part04_02_dl_mnist/ch01_04_DL_mnist01_firstmodel.html
+(이후의 시간) 비지도학습
+(1) 딥러닝 기본 라이브러리 설치 및 딥러닝 기본 이해
+(2) 딥러닝 기본 실습
+   (A) Keras 라이브러리 이해
+   (B) 오차함수, 최적화 함수 실습
+(3) 딥러닝 기본 CNN 실습 및 알아가기
+   (A) CNN 알고리즘 소개
+   (B) CNN을 이용한 실습해 보기
+(4) 딥러닝 알고리즘 소개
+   (A) 전이학습 소개
+   (B) RNN 소개
+   (C) 기타 알고리즘 소개
