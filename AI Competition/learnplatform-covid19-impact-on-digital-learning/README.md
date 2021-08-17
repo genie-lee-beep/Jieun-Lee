@@ -1,5 +1,5 @@
 
-# Data Descriptiongggggg
+# Data Description
 
 We include three basic sets of files to help you get started. The engagement data are based on [LearnPlatform](https://learnplatform.com/)’s Student Chrome Extension. The extension collects page load events of over 10K education technology products in our product library, including websites, apps, web apps, software programs, extensions, ebooks, hardwares, and services used in educational institutions. The engagement data have been aggregated at school district level, and each file represents data from one school district. The product file includes information about the characteristics of the top 372 products with most users in 2020. The district file includes information about the characteristics of school districts, including data from [National Center for Education Statistics (NCES)](https://nces.ed.gov/), [The Federal Communications Commission (FCC)](https://www.fcc.gov/), and [Edunomics Lab](https://edunomicslab.org/). In addition to the files provided, we encourage you to use other public data sources such as examples listed below.
 
@@ -30,7 +30,7 @@ The engagement data are aggregated at school district level, and each file in th
 | time | date in "YYYY-MM-DD" |
 | lp_id | The unique identifier of the product |
 | pct_access | Percentage of students in the district have at least one page-load event of a given product and on a given day |
-| engagement_index | Total page-load events per one thousand students of a given product and on a given day |
+| engagement_index | Total page-load events per one thousand students of a given product and on a given day. For example, if district A has an engagement index of 26666.66 for product X on 2021-08-10, that means there were 26666.66 page-load events per 1000 students for product X on 2021-08-10.
 
 
 ### District information data
