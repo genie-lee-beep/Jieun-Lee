@@ -22,8 +22,8 @@ Root/
 ## Data Definition
 
 ### Genie's Overview
-1 school - district info -file name|
-         - product infor - lp-id|
+1 school - district info -file name  
+         - product infor - lp-id  
          - pct_access - at least one page-load event|
          - engagement_index - ex) 26666.66 page-load events per 1000 students for product X on 2021-08-10|
          
