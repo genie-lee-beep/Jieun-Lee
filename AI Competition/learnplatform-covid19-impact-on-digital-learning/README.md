@@ -22,10 +22,11 @@ Root/
 ## Data Definition
 
 ### Genie's Overview
-1 school - district info -file name  
-         - product infor - lp-id  
-         - pct_access - at least one page-load event  
-         - engagement_index - ex) 26666.66 page-load events per 1000 students for product X on 2021-08-10  
+1 school  
+- district info -file name    
+- product infor - lp-id  
+- pct_access - at least one page-load event   
+- engagement_index - ex) 26666.66 page-load events per 1000 students for product X on 2021-08-10   
          
 ### Engagement data
 The engagement data are aggregated at school district level, and each file in the folder `engagement_data` represents data from one school district. The 4-digit file name represents `district_id` which can be used to link to district information in `district_info.csv`. The `lp_id` can be used to link to product information in `product_info.csv`.
