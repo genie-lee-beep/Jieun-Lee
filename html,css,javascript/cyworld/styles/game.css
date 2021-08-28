@@ -1,0 +1,192 @@
+* {
+    margin:0px;
+    box-sizing: border-box;
+
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    /* 맨 처음 영역을 확인하기 위해서 background-color를 지정해 준다 */
+    /* padding-left:30px;
+    padding-top:20px;
+    padding-right:30px;
+    padding-bottom: 20px; */
+    padding: 20px 30px;
+    /* 위의 4줄을 한번에! */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper__header {
+    width: 100%;
+    /* 👌마진있고 난 wrapper 전체 부모요소에 맞추는 거니까, 퍼센트로! */
+    height: 25px;
+    /* background-color: tomato; */
+    border-bottom: 1px solid gray;
+
+}
+
+.wrapper__header .title {
+    /* title이라는 이름이 많이 사용되면 헤깔리니까, wrapper__header안의 title이라는 것을 선언해주는 것임 */
+    color:#55B2D4;
+    font-size: 13px;
+
+}
+
+.wrapper__header .subtitle{
+    font-size: 8px;
+    padding-left: 5px;
+    /* GAME이랑 TODAYCOICE가 너무 달라 붙어 있으니까 5p정도 줘보자~ */
+
+
+}
+
+
+
+
+.wrapper__word {
+    width: 222px;
+    height: 168px;
+    background-color: #F6F6F6;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.wapper__word__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wapper__word__header .title {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.wapper__word__header .word_title {
+    color: #999999;
+    font-size: 10px;
+    padding-top: 5px;
+    /* 위에 끝말잇기랑 너무 붙어 있으니까 */
+}
+
+.wapper__word__body {
+}
+
+
+.textbox {
+    border-radius: 5px;
+    border: 1px solid #000000;
+    width: 136px;
+    height: 24px;
+    left: 436px;
+    top: 243px;
+    font-size: 11px;
+}
+
+.textbox::placeholder {
+    color: blue;
+    font-weight: bold;
+  }
+
+  /* 😍꿀팁! input안의 내용을 일일이 class를 만들지 않고, 태그 혹은 클래스명::placeholder{} 해서 css를 변경할 수 있다.)    */
+
+.click {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 38px;
+    height: 24px;
+    left: 580px;
+    top: 243px;
+    font-size: xx-small;
+
+
+}
+
+.wapper__word__footer {
+    color: #999999;
+    font-size: 11px;
+}
+
+.wrapper__word__header .carrier {
+	font-size: xx-large;
+}
+
+.wrapper__lotto {
+    width: 222px;
+    height: 168px;
+    background-color: #F6F6F6;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper__lotto__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.lotto{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.button_write {
+    font-size: 10px;
+    color: #999999;
+
+}
+
+.wrapper__lotto__body {
+    width: 130px;
+    height: 21px;
+    background: #FFE400;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid black;
+    justify-content:space-evenly;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+    /* 상하 좌우  (5pxdl 하에서 안 먹는 이유는, 높이가 작기 때문이다. */
+}
+
+
+
+.button_click {
+    font-size: 11px;
+    color: #010101;
+    width: 62px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.aaaa{
+    font-size: xx-large;
+}
+

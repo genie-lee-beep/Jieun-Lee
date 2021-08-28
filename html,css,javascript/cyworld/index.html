@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>싸이월드</title>
+    <link href="styles/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- fontawesome 다운로드 주소를 반드시 연결해 줘야 함. 이 주소는 다른 작업할 때도 동일하게 사용됨.-->
+    <script>
+
+        function menuHome(){
+            document.getElementById("main").setAttribute("src", "home.html") // (속성, ) 
+            document.getElementById("menuHome").style = "color: black; background-color:white;"
+            document.getElementById("menuGame").style = "color: white; background-color:#298EB5;"
+
+        }
+
+        function menuGame(){
+            document.getElementById("main").setAttribute("src", "game.html")
+            document.getElementById("menuHome").style = "color: background-color:white;"
+            document.getElementById("menuGame").style = "color: white; background-color:#298EB5;"
+
+        }
+
+        function menuJukebox() {
+
+
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper">
+                <!-- 사실상 wrapper와 outerbox는 같은 부분 -->
+                <div class="wrapper__left">
+                    <div class="wrapper__left__header">
+                        <div class ="today">
+                            TODAY <span class="Zero">0</span> | TOTAL <span class="count">12345</span> 
+                        </div>
+                    </div>
+                    <div class="wrapper__left__body">
+                        <div class="header">
+                        <div class="headerGrey">
+                        </div>
+                        <hr class="line"/>
+                        <div class="profileWrapper">
+                            <div class="profile">
+                                <i class="fas fa-signature bbbb"></i> 이름
+                                <!-- Tip! html파일에서 한칸 띄고 클래스명을 임의(aaa)로 임력해 주면, css에서 .aaa 쓰고 색깔,크기등을 변경할 수 있음 -->
+                            </div>
+                            <div class="profile">
+                                <i class="fas fa-phone"></i> Phone
+                            </div>
+                            <div class="profile">
+                                <i class="fas fa-envelope-square"></i> E-mail
+                            </div>
+                            <div class="profile">
+                                <div class="fas fa-images"></div> 인스타그램
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footer">
+                            <div class="feelWrapper">
+                                <div class="feel">오늘의 기분</div>
+                                <select class="feelSelect">
+                                    <option>기쁨 😀</option>
+                                    <option>슬픔 😭</option>
+                                    <option>분노 😡</option>
+                                    <option>행복 😊</option>
+
+                                </select>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__right">
+                    <div class="wrapper__right__header">
+                        <div class="cyworld">
+                            <span class="Word">사이좋은 사람들, 싸이월드</span><span class="privacy">사생활보호설정<i class="fas fa-caret-right aaa"></i></span>
+                            
+                    </div>   
+                    <div class="wrapper__right__body">
+                        <iframe id='main' src="home.html"></iframe>
+                        <!-- <iframe> : 다른 html 파일이랑 연결해 주는 태크/ iframe도 크기를 가지고 있다!! -->
+                        <!-- <iframe src="game.html"></iframe> -->
+                        <infram scr="jukebox.html"></infram>
+                    </div>
+                    </div>
+                <div class="navigation">
+                    <div class="navigation__item" id="menuHome" onclick="menuHome()">
+                        홈
+                    </div>
+
+                    <div  class="navigation__item" id="menuGame" onclick="menuGame()">
+                        게임
+                    </div>
+
+                    <div  class="navigation__item" id= "menuGame" onclick="menujukebox()">
+                        쥬크박스
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
