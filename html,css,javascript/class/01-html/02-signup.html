@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link href="02-signup.css" rel="stylesheet" />
+        <!-- rel:relation -->
+    </head>
+    
+    <body>
+        <!-- 아래는 회원가입 입력창입니다. -->
+        <h1 style="color: blue;">회원가입</h1>
+        <input type="text" placeholder="이름을 입력해 주세요" /> <br/><br/>
+        <input type="text" placeholder="이메일을 입력해 주세요" /><br/><br/>
+        <input id="fff" class="qqq" type="password" placeholder="비밀번호를 입력해 주세요" /><br/><br/>
+        <input class="qqq" type="password" placeholder="비밀번호를 다시 입력해 주세요" /><br/><br/>
+        <!-- class는 원하는 것끼리 묶는거, id는 하나 콕 집는거 -->
+        <select>
+             <!-- select 태그는 항상 <option>과 함께! -->
+            <option disabled selected>지역을 선택하세요.</option>
+            <!-- 지역을 선택하세요는 선택안된게 하려면 <option disabled selceted  -->
+            <option>서울</option>
+            <option>인천</option>
+            <option>경기</option>
+
+        </select><br /><br />
+        <input type="radio" name="성별" />여성 <input type="radio" name="성별"/>남성 <br/><br/>
+        <!-- name이라는 그룹을 만들고, 양쪽에 둘다 똑같이 쓴다. -->
+        <input type="checkbox"/> 이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.</br></br>
+        <hr /> 
+        <!-- <hr /> 밑줄 -->
+        <button><h1>가입하기</h1></button>
+        <!-- <input type="button" value="가입하기"/> -->
+        <!-- button이라는 태크와 input 차이:button태그안에는 다양한 태그(h1, 이미지등)도 넣을 수 있고 다양한 것을 넣을 수 있기 때문에, 실무에서는 button태그를 많이 사용한다.  -->
+
+        
+    </body>
+</html>

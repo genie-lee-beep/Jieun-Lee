@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>HTML과 연결</title>
+    <script>
+        // [function연습] 안녕하세요 버튼 누르면 안녕하세요 >반갑습니다. 문자 변경
+        function aaa() {
+            // alert('반갑습니다')
+
+            document.getElementById("qqq").innerText = "반갑습니다."
+
+        } 
+        // [function연습2] 올리기 버튼 누르면 1씩 숫자가 증가
+        function bbb() {
+            const number = Number(document.getElementById("zzz").innerText) //문자를 숫자로 바꿔줌.
+            // const라는 상수에 담아준다. 0이라는 숫자를 가져와서 number라는 것에 담아줌.
+            document.getElementById("zzz").innerText = number + 1
+
+        }
+            function ccc() {
+                document.getElementById("xxx").setAttribute("disabled",true)
+
+            }
+
+            function fff() {
+                document.getElementById("ddd").style = "color: red"
+            }
+
+
+        
+
+    </script>
+</head>
+<body>
+    <div id="qqq">안녕하세요</div>
+
+    <button onclick="aaa()">클릭하세요!</button>
+    <!-- alert()는 javascript입니다. -->
+    <!-- 클릭하세요라는 단어를 클릭하면, onclick이 실행이 됨 -->
+
+
+    <div id="zzz">0</div>
+    <button onclick="bbb()">올리기</button>
+
+    <!-- <button id="xxx" onclick="ccc()" disabled>비활성화 시키기</button> // html로 버튼 비활성화 시키는 방법 -->
+    <button id="xxx" onclick="ccc()">비활성화 시키기</button>
+
+    <button id="ddd" onclick="fff()">색깔 바꾸기</button>
+
+
+
+
+
+    
+</body>
+</html>

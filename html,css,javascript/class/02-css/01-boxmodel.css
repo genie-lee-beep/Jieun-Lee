@@ -1,0 +1,30 @@
+.aaa {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 30px;
+    border: 5px solid blue;
+    padding: 30px;
+    box-sizing: border-box;
+    /* 디폴트 값이 컨텐츠박스에 맞춰져 있는데, 꼭 border-box로 맞춰줘야 한다! */
+}
+/* 태그를 쓰고 중괄호 */
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 30px;
+    border: 5px solid blue;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: yellow;
+    height: 500px;
+    align-items: center;
+}
