@@ -1,0 +1,4 @@
+jupyter notebook대신 google colab 사용 권장
+
+분노의 질주_'나만의 불용어 사전' (파일명: stopwords_extreme(movie).txt) 메모잘 파일을 찾아서 넣어야 함 
+
