@@ -1,0 +1,194 @@
+#Need this for language determination 
+import sys
+
+#Need this for reading csv file
+import csv
+
+#Need this for converting all texts into lowercase
+import re
+
+#Need this for tokenization
+from nltk import wordpunct_tokenize
+from nltk.corpus import stopwords
+import nltk
+
+#settings
+filepath = 'result3.csv'
+#filepath = 'good_test.csv'
+resultpath = 'output4.csv'
+resultfile = open(resultpath, 'xt')
+
+def contains_word(s, w1):
+   #return (' ' + w1 + ' ') in (' ' + s + ' ')
+   return (w1 + ' ') in (' ' + s + ' ')
+  
+
+def determine_question():
+       stringline=line.replace("\r","")
+       stringline=stringline.replace("\n","")
+       
+       
+
+#Determining LEVEL 5 QUESTIONS                    
+       if contains_word(stringline.lower(), 'what'):
+            if contains_word(stringline.lower(), 'if'):
+                resultfile.write(stringline + ' - Level 5' + "\n")      
+                return None               
+       if contains_word(stringline.lower(), 'how') is not (contains_word(stringline.lower(), 'how many') or contains_word(stringline.lower(), 'how old') or contains_word(stringline.lower(), 'how long')):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'did') or contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'were') or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'may') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall') or contains_word(stringline.lower(), 'has') or contains_word(stringline.lower(), ' have'):
+                resultfile.write(stringline + ' - Level 5' + "\n")  
+                return None
+       if contains_word(stringline.lower(), 'why'):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'did') or contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'were') or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall'):
+                resultfile.write(stringline + ' - Level 5' + "\n")  
+                return None
+        
+#Determining LEVEL 2 QUESTIONS
+       if contains_word(stringline.lower(), 'what'):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'did'):
+                
+            #Jumping to LEVEL 3 based on vocabulary
+              
+                if contains_word(stringline.lower(), 'explain') or contains_word(stringline.lower(), 'example') or contains_word(stringline.lower(), 'result') or contains_word(stringline.lower(), 'show') or contains_word(stringline.lower(), 'differ'):
+                    resultfile.write(stringline + ' - Level 3 - based on directive verb' + "\n")  
+                    return None
+                
+                if contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall'):      
+                    resultfile.write(stringline + ' - Level 3 - based on directive verb' + "\n")  
+                    return None
+            
+            #Jumping to LEVEL 4 based on vocabulary
+                
+                if contains_word(stringline.lower(), 'mean') or contains_word(stringline.lower(), 'infer') or contains_word(stringline.lower(), 'interpret'):
+                    resultfile.write(stringline + ' - Level 4 - based on directive verb' + "\n")  
+                    return None
+                
+                if contains_word(stringline.lower(), 'summarize') or contains_word(stringline.lower(), 'recommend') or contains_word(stringline.lower(), 'evaluate') or contains_word(stringline.lower(), 'consider'):
+                    resultfile.write(stringline + ' - Level 4 - based on directive verb' + "\n")  
+                    return None
+                                
+                else: 
+                    resultfile.write(stringline + ' - Level 2' + "\n")
+                    return None
+
+       if contains_word(stringline.lower(), 'which'):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'did') or contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall') or contains_word(stringline.lower(), 'of'):
+                resultfile.write(stringline + ' - Level 2' + "\n")  
+                return None
+
+       if contains_word(stringline.lower(), 'who'):
+            if contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall'):
+                resultfile.write(stringline + ' - Level 2' + "\n")  
+                return None
+                
+       if contains_word(stringline.lower(), 'when'):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does')  or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall'):
+                resultfile.write(stringline + ' - Level 2' + "\n")  
+                return None
+                                 
+       if contains_word(stringline.lower(), 'where'):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might') or contains_word(stringline.lower(), 'may') or contains_word(stringline.lower(), 'should') or contains_word(stringline.lower(), 'shall'):
+                resultfile.write(stringline + ' - Level 2' + "\n")  
+                return None
+
+       if contains_word(stringline.lower(), 'how many') or contains_word(stringline.lower(), 'how much'):
+            if contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'did') or contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'were') or contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'would') or contains_word(stringline.lower(), 'will') or contains_word(stringline.lower(), 'might'):
+                resultfile.write(stringline + ' - Level 2' + "\n")            
+                return None
+                
+       if  ('_' or '{' or '[' or '{' or ':' or '=') in stringline.lower():
+            resultfile.write(stringline + ' - Level 2 - based on special character' + "\n")
+            return None
+     
+       if  '..' in stringline.lower():
+            resultfile.write(stringline + ' - Level 2 - based on special character' + "\n")
+            return None
+     
+     
+       #Based on directive verb    
+       if ('what' or 'where' or 'who' or 'how' or 'where' or 'which' ) not in stringline.lower():
+            if contains_word(stringline.lower(), 'list') or contains_word(stringline.lower(), 'name') or contains_word(stringline.lower(), 'find') or contains_word(stringline.lower(), 'give') or contains_word(stringline.lower(), 'write') or contains_word(stringline.lower(), 'explain') or contains_word(stringline.lower(), 'make') or contains_word(stringline.lower(), 'define') or contains_word(stringline.lower(), 'describe'):
+                resultfile.write(stringline + ' - Level 2 - based on directive verb' + "\n")
+                return None
+              
+       #Based on modal verbs
+       if contains_word(stringline.lower(), 'can') or contains_word(stringline.lower(), 'could') or contains_word(stringline.lower(), 'is')  or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'has') or contains_word(stringline.lower(), 'have'):
+            if contains_word(stringline.lower(), 'you') or contains_word(stringline.lower(), 'we') or contains_word(stringline.lower(), 'he') or contains_word(stringline.lower(), 'she') or contains_word(stringline.lower(), 'it') or contains_word(stringline.lower(), 'did') or contains_word(stringline.lower(), 'there'):
+                resultfile.write(stringline + ' - Level 2 - based on modal verb' + "\n")            
+                return None
+        
+#Determining LEVEL 1 QUESTIONS          
+       if contains_word(stringline.lower(), 'what'):
+            if contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'are') or contains_word(stringline.lower(), 'were'):
+                resultfile.write(stringline + ' - Level 1' + "\n")
+                return None
+       if contains_word(stringline.lower(), "what's"):
+                resultfile.write(stringline + ' - Level 1' + "\n")
+                return None
+       if contains_word(stringline.lower(), 'who'):
+            if contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'do') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'did'):
+                resultfile.write(stringline + ' - Level 1' + "\n")
+                return None
+       if contains_word(stringline.lower(), 'when'):
+            if contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'did'):
+                resultfile.write(stringline + ' - Level 1' + "\n")
+                return None
+       if contains_word(stringline.lower(), 'where'):
+            if contains_word(stringline.lower(), 'is') or contains_word(stringline.lower(), 'was') or contains_word(stringline.lower(), 'did') or contains_word(stringline.lower(), 'does') or contains_word(stringline.lower(), 'are'):
+                resultfile.write(stringline + ' - Level 1' + "\n")
+                return None
+       
+
+                
+
+        
+# Label the rest
+
+       else:
+            tokenized = nltk.word_tokenize(stringline)       
+            tagged = nltk.pos_tag(tokenized)
+            
+            finaltext1 = [word for (word, pos) in tagged if pos in ('MD', 'VB' , 'VBN' , 'VBZ' , 'VBG' , 'VBD' , 'VBP')]
+            finaltext2 = [word for (word, pos) in tagged if pos in ('WDT', 'WP', 'WP$', 'WRB')]
+            finaltext3 = [word for (word, pos) in tagged if pos in ('NN', 'NNS', 'NNP', 'NNPS')]
+            
+                     
+            if len(finaltext2) >=1:
+                if finaltext2 =='why' and len(finaltext1) >=1:
+                    resultfile.write(stringline + ' - Level 5 ---based on why + verb' + "\n")  
+                    resultfile.write("VERB: %s " % finaltext1)
+                    return None
+                    
+                if finaltext2 =='what' and len(finaltext1) >=1:
+                    resultfile.write(stringline + ' - Level 2 --- based on what +  verb' + "\n")  
+                    resultfile.write("VERB: %s " % finaltext1)
+                    return None
+                    
+            if len(finaltext2) <=0 and len(finaltext1) >=1:
+                    resultfile.write(stringline + ' - Level 2 --- based on no whs' + "\n")  
+                    resultfile.write("VERB: %s " % finaltext1)
+                    return None
+                    
+            resultfile.write(stringline + ' - Level TBD')  
+            resultfile.write("NOUN: %s " % finaltext3)           
+            resultfile.write("\n")
+            
+           
+            
+            
+if __name__=='__main__':
+
+    with open(filepath) as fp:  
+       try:
+           line = fp.readline()
+       except Exception as e:
+           print (e)
+       cnt = 1
+       while line:
+           print("Line {}: {}".format(cnt, line), end='')
+           try:
+               line = fp.readline()
+           except Exception as e:
+               print(e)
+           cnt += 1
+           determine_question()

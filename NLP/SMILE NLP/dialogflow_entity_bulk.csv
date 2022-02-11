@@ -1,0 +1,23 @@
+ID,IntentName,UserSays,TextResponse
+1,Intent1,"what is a prism,,,",Level1
+1,Intent1,"what is a complete spectrum,,,",Level1
+1,Intent1,"which planet is extinct from our solar system?,,,",Level1
+1,Intent1,"What is a sieve?,1,,",Level1
+1,Intent1,"What is a gravitational force?,,,",Level1
+1,Intent1,"What is Frictional force?,5,,",Level1
+2,Intent2,"what is the unit of the force?,,,",Level2
+2,Intent2,"New materials are  formed  during _____________ change.,,,",Level2
+2,Intent2,"what are disadvantigies of sound,,,",Level2
+2,Intent2,"what are the transfers of heat,,,",Level2
+2,Intent2,"how many types of weather is there,1,,",Level2
+2,Intent2,"How many years does Neptune take to revolve around the sun,,,",Level2
+2,Intent2,"How many planets are there in our solar system?,4,,",Level2
+2,Intent2,"What is a Chemical change?,,,",Level2
+2,Intent2,"how much days sun take to revolve around mars?,2,,",Level2
+3,Intent3,"what does earth exerts?,1,,",Level3
+3,Intent3,"explain what a sieve is,,,",Level3
+3,Intent3,"What does mythological means?,,,",Level3
+3,Intent3,"Soil erosion depends on various factors such as :,,,",Level3
+3,Intent3,"As the moon revolves around the earth its_______________force pull the earth towards it,,,",Level3
+4,Intent4,"Why is it difficult to move an oar through the water when we row a boat?,,,",Level4
+4,Intent4,"why the recycling bin are in the society?,2,,",Level4

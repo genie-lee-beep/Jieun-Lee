@@ -1,0 +1,145 @@
+import re, math
+from collections import Counter
+
+
+
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+import nltk
+import re
+
+
+from random import randint
+
+
+WORD = re.compile(r'\w+')
+
+
+def get_cosine(vec1, vec2):
+     intersection = set(vec1.keys()) & set(vec2.keys())
+     numerator = sum([vec1[x] * vec2[x] for x in intersection])
+
+     sum1 = sum([vec1[x]**2 for x in vec1.keys()])
+     sum2 = sum([vec2[x]**2 for x in vec2.keys()])
+     denominator = math.sqrt(sum1) * math.sqrt(sum2)
+
+     if not denominator:
+        return 0.0
+     else:
+        return float(numerator) / denominator
+
+def text_to_vector(text):
+     words = WORD.findall(text)
+     return Counter(words)
+
+# text1 = 'Why did Jesus die?'
+# text2 = 'When did Jesus move to Galilea?'
+
+if __name__=='__main__':
+
+	
+
+	evalSentence = input('Input a sentence to be evaluated, or Enter to quit: ')
+
+	if len(evalSentence) == 0:
+	    print('Not enough user input')
+
+	else: 
+		#evalSentence = evalSentence.lower()
+		evalSentence = evalSentence.replace("?","")
+		found=0
+
+		filepath='output7_SQUAD_plus_original5.csv'
+		qst_list=[]
+
+		text1= evalSentence
+
+		with open(filepath) as fp:
+			try:
+				#line = fp.readline().split("\t")[0]
+				line = fp.readline()
+			except Exception as e:
+				print (e)
+			cnt = 1
+
+			while line:
+				try:
+					if not cnt ==1:
+						#line = fp.readline().split("\t")[0]
+						line = fp.readline()
+				except Exception as e:
+						print(e)
+				
+				stringline=line
+				#print(line.encode('utf-8'))
+				# stringline=stringline.replace('&quot;',"")
+				# stringline=stringline.replace('\r',"")
+				# stringline=stringline.replace('\n',"")
+				# stringline=stringline.replace('"',"")
+				# stringline=stringline.replace('\\r',"") 
+				# stringline=stringline.replace('\\n',"")
+				# stringline=stringline.replace('#',"")
+				stringline==''.join(c if c not in map(str,range(0,10)) else "" for c in stringline)
+				stringline=stringline.replace('?',"")
+				stringline=stringline.replace(',',"")
+				
+				#text2=stringline.lower()
+				text2=stringline
+				# print('-----------')
+				# print(text2.encode('utf-8'))
+				# print('-----------')
+				
+
+				if not stringline == "":
+
+					vector1 = text_to_vector(text1)
+					vector2 = text_to_vector(text2)
+
+					cosine = get_cosine(vector1, vector2)
+
+					print('\r Searching %d out of 101094' % cnt, end="", flush=True)
+					#for i in tqdm(range(100)):time.sleep(1)
+
+
+					if cosine>0.3:
+						
+						
+						tokenized1 = nltk.word_tokenize(text1)          
+						tagged1 = nltk.pos_tag(tokenized1)
+						finaltext1 = [word.lower() for (word, pos) in tagged1 if pos in ('NN', 'NNS','NNP','NNPS')]
+						
+						tokenized2 = nltk.word_tokenize(text2)          
+						tagged2 = nltk.pos_tag(tokenized2)
+						finaltext2 = [word.lower() for (word, pos) in tagged2 if pos in ('NN', 'NNS','NNP','NNPS')]
+						
+						#print(finaltext2)
+						
+
+						for word in finaltext1:
+							if word in finaltext2:
+								matched+=1
+
+						if matched >=1:
+							#print ('\r %s -- %f%%' % (stringline[0:-2]+'?', cosine))
+							qst_list.append((line[0:-2]+'?', str(cosine)[:4]))
+							#print(finaltext2)
+							#print(finaltext1)
+							found+=1
+				cnt+=1
+				matched=0
+
+
+
+if found > 4:
+
+	for i in range(0, 3):
+		picked=randint(0, found-1)
+		print('found', found)
+		print('picked', picked)
+		print('selected', qst_list[picked])
+else:
+	print('Questions selected and matching ratio')
+	print(qst_list)
+
+
+print(finaltext1)
