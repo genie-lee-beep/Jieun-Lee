@@ -1,6 +1,9 @@
-# Repository name : Jieun-Lee
+# What if Genie Projects
+
+### Genie Blog: Medium  
+                Tistiry:  
 ### Repository Content
-  * 내용 : 자바스크립트 기본 샘플 코드
+  *  Bootcamp : 자바스크립트 기본 샘플 코드
   * 참조 코드 : https://www.w3schools.com/js
 ### 참조 링크
   * [W3 School](https://www.w3schools.com/js)
