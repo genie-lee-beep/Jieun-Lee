@@ -1,10 +1,10 @@
-# What if Genie Projects
+# What if Genie Projects  (README 수정중)
 
 ### Genie Blog
 * Medium  
 * Tistiry  
 ### Repository Content
-  *  Bootcamp : 자바스크립트 기본 샘플 코드
+  *  Bootcamp : 
   * 참조 코드 : https://www.w3schools.com/js
 ### 참조 링크
   * [W3 School](https://www.w3schools.com/js)
