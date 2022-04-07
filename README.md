@@ -26,6 +26,11 @@
     - 분류,회기, 추천시스템, 시각/음성 감지/인지, 텍스트 분석,NLP
     - 예: iris 품종 예측하기
     
+    - **분류(Classification)**
+    - 주어진 데이터가 어떤 라벨(클래스)인지 예측하는 것 -discreet한 output을 가짐
+    - 생선 사진을 보고 넙치(광어)인지 도다리인지 구별하는 문제. 넙치, 도다리와 같은 것을 각각 클래스(class)라고 한다.
+ \
+ ###  모델 만들기
   * 1.**Load and check** (datahttps://celestial-fennel-924.notion.site/1-Load-and-check-data-65365288a87145fda63142743dab3c8f)
   * 2.**Exploratory Data Analysis(EDA)** (https://celestial-fennel-924.notion.site/2-Exploratory-Data-Analysis-EDA-bc589bedc2424f90bc631014265d5881)
   * 3.
