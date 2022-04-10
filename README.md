@@ -33,7 +33,7 @@
  ###  모델 만들기
   * 1.**Load and check** (datahttps://celestial-fennel-924.notion.site/1-Load-and-check-data-65365288a87145fda63142743dab3c8f)
   * 2.**Exploratory Data Analysis(EDA)** (https://celestial-fennel-924.notion.site/2-Exploratory-Data-Analysis-EDA-bc589bedc2424f90bc631014265d5881)
-  * 3.
+  * 3.**데이터 전처리 Data Preprocessing** https://celestial-fennel-924.notion.site/3-Data-Preprocessing-5c218b3eccff43259157939bd97fd24f   
   * 4.**Feature scaling** (https://www.notion.so/4-Feature-scaling-b4ee44db252147f080a041f10e99f20e)
   * 5.**머신러닝 모델 만들기**(https://celestial-fennel-924.notion.site/5-bfb0d6f6dde442a0aa27b1ebefc42579)
   * 6. 
@@ -41,7 +41,7 @@
 
 ###  딥러닝
 
-### 소스 코드
+### 소스 코드 
 | 파일명 | code(.html) | 설명 |
 |------  |---          |---   |
 |01_01.html |01_01.html | 첫 자바스크립트 만들기|
