@@ -26,7 +26,7 @@
     - 분류,회기, 추천시스템, 시각/음성 감지/인지, 텍스트 분석,NLP
     - 예: iris 품종 예측하기
     
-    - **분류(Classification)**
+    **분류(Classification)**
     - 주어진 데이터가 어떤 라벨(클래스)인지 예측하는 것 -discreet한 output을 가짐
     - 생선 사진을 보고 넙치(광어)인지 도다리인지 구별하는 문제. 넙치, 도다리와 같은 것을 각각 클래스(class)라고 한다.
     - 분류는 다양한 머신러닝 알고리즘으로 구현할 수 있습니다. 
@@ -37,6 +37,11 @@
       - Nearest Neighbor
       - Neural Network
       - Ensenble
+      - 
+     **회귀Regression)**
+    - 입력값에 따른 미래 결과값(수치형 데이터)을 예측하는 알고리즘
+    - 단순 선형 회귀:feature가 1개
+    - 다중 회귀 분석(Multiple Linear Regression)은 데이터의 여러 변수(features)를 이용해 결과 Y를 예측하는 모델입니다.
 
  ###  모델 만들기
   * 1.**Load and check** (datahttps://celestial-fennel-924.notion.site/1-Load-and-check-data-65365288a87145fda63142743dab3c8f)
