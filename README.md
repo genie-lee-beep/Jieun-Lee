@@ -2,7 +2,7 @@
 
 ### Genie Blog
 * Medium  
-* Tistiry  
+* Tistory | https://whatif-genie.tistory.com/
 ### Repository Content
   *  Bootcamp : 
   * 참조 코드 : https://www.w3schools.com/js
