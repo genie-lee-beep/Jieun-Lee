@@ -43,6 +43,9 @@
        - 범주에 숫자 값을 할당하여 범주형 데이터를 수량화함으로써 변환된 변수에 대한 최적 선형 회귀 방정식을 작성합니다.
        - 예제. 범주형 회귀분석을 사용하여 직업 범주에 따른 직업 만족도, 지역, 여행 횟수 등을 설명할 수 있습니다. 높은 만족도는 관리자 및 낮은 여행 빈도와 대응되는 것을 알 수 있습니다. 회귀 방정식 결과를 통해 위의 세 가지 독립변수 조합에 대한 직업 만족도를 예측할 수 있습니다
 
+**Classification VS Clustering
+
+
  ###  모델 만들기
   * 1.**Load and check** (datahttps://celestial-fennel-924.notion.site/1-Load-and-check-data-65365288a87145fda63142743dab3c8f)
   * 2.**Exploratory Data Analysis(EDA)** (https://celestial-fennel-924.notion.site/2-Exploratory-Data-Analysis-EDA-bc589bedc2424f90bc631014265d5881)
