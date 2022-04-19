@@ -54,8 +54,7 @@
   * 5.**머신러닝 모델 만들기**(https://celestial-fennel-924.notion.site/5-bfb0d6f6dde442a0aa27b1ebefc42579)
   * 6. **모델 성능 평가**
   * 7. **모델 저장 및 불러오기**
-  * [MarkDown 사용법 총정리] https://heropy.blog/2017/09/30/markdown/
-
+ 
 ###  딥러닝
 
 ### 소스 코드 
