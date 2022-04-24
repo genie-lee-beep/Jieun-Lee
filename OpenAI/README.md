@@ -6,3 +6,4 @@ https://celestial-fennel-924.notion.site/What-I-found-from-testing-of-OpenAI-9aa
 #### OpenAI can distinguish the annotation mark in the python code.
 #### OpenAI recommends color based on topic
 - OpenAI understands what CSS is.
+#### OpenAI is good at t**ranslation performance.
