@@ -8,7 +8,7 @@ https://celestial-fennel-924.notion.site/What-I-found-from-testing-of-OpenAI-9aa
 - OpenAI understands what CSS is.
 #### OpenAI is good at t**ranslation performance.
 
-
+#### There is a limitation to creating a spreadsheet
 
 ### Conclusion
 - **Personally, I liked the word Playground, which describes the page where users can test the functions.**
