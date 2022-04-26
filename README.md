@@ -54,7 +54,5 @@
   * 3.**데이터 전처리 Data Preprocessing** https://celestial-fennel-924.notion.site/3-Data-Preprocessing-5c218b3eccff43259157939bd97fd24f   
   * 4.**Feature scaling** (https://www.notion.so/4-Feature-scaling-b4ee44db252147f080a041f10e99f20e)
   * 5.**머신러닝 모델 만들기**(https://celestial-fennel-924.notion.site/5-bfb0d6f6dde442a0aa27b1ebefc42579)
-  * 6. **모델 성능 평가**
-  * 7. **모델 저장 및 불러오기**
- 
-###  딥러닝
+  * 6.**모델 성능 평가**
+  * 7.**모델 저장 및 불러오기**
