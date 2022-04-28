@@ -55,4 +55,4 @@
   * 4.**Feature scaling** (https://www.notion.so/4-Feature-scaling-b4ee44db252147f080a041f10e99f20e)
   * 5.**머신러닝 모델 만들기**(https://celestial-fennel-924.notion.site/5-bfb0d6f6dde442a0aa27b1ebefc42579)
   * 6.**모델 성능 평가** (https://celestial-fennel-924.notion.site/6-1c3c60e407924fe68508f73452ea0f17)
-  * 7.**모델 저장 및 불러오기**
+  * 7.**피쳐 중요도 확인** (https://celestial-fennel-924.notion.site/Feature-importance-a1a2822552284bfda0328b4089f2cd00)
