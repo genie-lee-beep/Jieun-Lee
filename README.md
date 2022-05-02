@@ -54,13 +54,12 @@
   * 3.**데이터 전처리 Data Preprocessing** https://celestial-fennel-924.notion.site/3-Data-Preprocessing-5c218b3eccff43259157939bd97fd24f   
   * 4.**Feature scaling** (https://www.notion.so/4-Feature-scaling-b4ee44db252147f080a041f10e99f20e)
   * 5.**머신러닝 모델 만들기**(https://celestial-fennel-924.notion.site/5-bfb0d6f6dde442a0aa27b1ebefc42579)
-  * 6. **모델 성능 평가**
-  * 7. **모델 저장 및 불러오기**
- 
-###  딥러닝
-
-### 소스 코드 
-| 파일명 | code(.html) | 설명 |
-|------  |---          |---   |
-|01_01.html |01_01.html | 첫 자바스크립트 만들기|
-|01_02.html |01_02.html | alert() 함수를 이용한 경고 메시지 출력|
+      Supervised Model  
+        - k-Nearest Neighbors (KNN)
+        - LogisticRegression (regression이지만 binary 분류 모델이다.)
+        - Gradientboost
+        - Linear Regression Model
+        - Ridge Regreesion /Lasso Resgression
+        - Catboost
+  * 6.**모델 성능 평가** (https://celestial-fennel-924.notion.site/6-1c3c60e407924fe68508f73452ea0f17)
+  * 7.**피쳐 중요도 확인** (https://celestial-fennel-924.notion.site/Feature-importance-a1a2822552284bfda0328b4089f2cd00)
