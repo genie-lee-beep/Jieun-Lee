@@ -68,8 +68,12 @@
         - LightBGM
         결정경계 기반 모델
         - SVM Classification
-        - SVM Regression
-       Boost
+        - SVM Regression  
+        모델별 하이퍼 파라미터: 파라미터를 넣어주고, 이렇게 시각화를 하면서 봐야 하는 이유는, 어느 부분에서 오류가 나왔고, 어느 부분을 개선을 해야 할지, 어떤 파라미터 값을 바꿔야 하는지를 확인할 수 있기 때문이다.   
+       ![image](https://user-images.githubusercontent.com/65989155/167427985-ded1ea13-d838-4ea1-babc-ed180007e543.png)
+
+
+예를들어 logistic liblinear가 충분히 역할을 하고 있다고 보는 이유는 아래의
         
   * 6.**모델 성능 평가** (https://celestial-fennel-924.notion.site/6-1c3c60e407924fe68508f73452ea0f17)
   * 7.**피쳐 중요도 확인** (https://celestial-fennel-924.notion.site/Feature-importance-a1a2822552284bfda0328b4089f2cd00)
