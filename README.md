@@ -71,6 +71,7 @@
         - SVM Regression  
         모델별 하이퍼 파라미터: 파라미터를 넣어주고, 이렇게 시각화를 하면서 봐야 하는 이유는, 어느 부분에서 오류가 나왔고, 어느 부분을 개선을 해야 할지, 어떤 파라미터 값을 바꿔야 하는지를 확인할 수 있기 때문이다.   
        ![image](https://user-images.githubusercontent.com/65989155/167427985-ded1ea13-d838-4ea1-babc-ed180007e543.png)
+        GridSearchCV : 파라미터의 값을 이렇게 저렇게 교차하면서 모델의 예측 성능을 확인 할 수 있도록 해주는 파라미터
 
 
 예를들어 logistic liblinear가 충분히 역할을 하고 있다고 보는 이유는 아래의
