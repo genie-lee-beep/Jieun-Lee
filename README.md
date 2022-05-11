@@ -75,6 +75,10 @@
 
 
 예를들어 logistic liblinear가 충분히 역할을 하고 있다고 보는 이유는 아래의
+Unsupervised Model
+- K-means
+
+
         
   * 6.**모델 성능 평가** (https://celestial-fennel-924.notion.site/6-1c3c60e407924fe68508f73452ea0f17)
   * 7.**피쳐 중요도 확인** (https://celestial-fennel-924.notion.site/Feature-importance-a1a2822552284bfda0328b4089f2cd00)
