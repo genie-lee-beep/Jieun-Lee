@@ -1,4 +1,6 @@
-# What if Genie Projects  (README 수정중)
+Jieun Lee(Genie Lee)
+
+# What if Genie Projects
 
 ### Genie Blog
 * Medium  
