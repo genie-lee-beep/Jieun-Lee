@@ -3,8 +3,8 @@ Jieun Lee(Genie Lee)
 # What if Genie Projects
 
 ### Genie Blog
-* Medium  
 * Tistory | https://whatif-genie.tistory.com/
+
 ## 내가 생각하는 인공지능이란?
 질적인 결과물을 데이터화 하고 테크화 하는 것
 
